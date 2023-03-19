@@ -1,0 +1,131 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+*
+{
+  box-sizing: borderbox;
+}
+
+/* Primeiro PopUp */ 
+.popup-mostrar{
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.popup-content {
+  display: block;
+  text-align: center;
+  width: 55vh;
+  border: groove;
+  border-color: lightskyblue;
+  background-color: #DDDFFF;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+.close-popup{
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  width: 6vh;
+  position: relative;
+  top: 5vh;
+  left: 49vh;
+  background-color: #f04c4c;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2a2b2d;
+  font-weight: bold;
+  z-index: 1;
+  }
+.aceitar{
+  height: 2em;
+  border: none;
+  background-color: #639af2;
+  cursor: pointer;
+  position: relative;
+  bottom: 2vh;
+  border-radius: 7px;
+  }
+.aceitar:hover{
+  background-color: #144ac8;
+}
+.aceitar:active{
+  background-color: #f5f5f5;
+  position: relative;
+  bottom: 1.5vh;
+}
+
+#caixa-texto
+{
+  border-top: 0;
+  border-left: 0;
+  border-right:0;
+  border-bottom: 2px solid;
+  border-color: #639af2;
+  position: relative;
+  bottom: 2vh;
+  background-color: #DDDFFF ;
+}
+
+
+
+/* Segundo popup */
+
+.popupdois{
+  display: none;
+  position: absolute;
+  top: 10vh;
+  left: 10vh;
+  background-color: rgba(#646262, #024b02, #000070, 70%);
+}
+.content {
+  display: block;
+  text-align: center;
+  width: 55vh;
+  border: groove;
+  border-color: lightskyblue;
+  background-color: #DDDFFF;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+.fechar{
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  width: 6vh;
+  position: relative;
+  top: 5vh;
+  left: 49vh;
+  background-color: #f04c4c;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2a2b2d;
+  font-weight: bold;
+  z-index: 1;
+  }
+.fechapop{
+  height: 2em;
+  border: none;
+  background-color: #639af2;
+  cursor: pointer;
+  position: relative;
+  bottom: 2vh;
+  border-radius: 7px;
+  }
+.fechapop:hover{
+  background-color: #144ac8;
+}
+.fechapop:active{
+  background-color: #f5f5f5;
+  position: relative;
+  bottom: 1.5vh;
+}
+
+#texto
+{
+  position: relative;
+  bottom: 2vh;
+  background-color: #DDDFFF ;
+}
