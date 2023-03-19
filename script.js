@@ -7,8 +7,8 @@ const popUpDoisFechar = document.querySelector(".popupdois");
 botao.addEventListener("click", () => {
   popUpDoisFechar.style.display = "none";
   mostrarPopup.style.display = "block";
-});
 
+});
 
 /* Função que controla o fluxo de informação do usuario e devolve outro popup mostrando o controle de idade*/
 
@@ -20,19 +20,25 @@ const botaoAceitar = document.querySelector(".aceitar");
 const popUpResposta = document.querySelector(".popupdois");
 const fecharPopUp = document.querySelector(".popup-mostrar");
 botaoAceitar.addEventListener("click", () => {
+
   //verificando Idade
+
   const infoIdade = Number(document.getElementById("caixa-texto").value);
-  if (infoIdade >= 18) {
+  
+  // Verificando informação introduzida pelo usuario.
+    if (infoIdade >= 18) {
     const podeVotar = 'Você pode votar';
     document.querySelector("#texto").innerHTML = `${podeVotar}`;
   } else {
     const naoPodeVotar = 'Você não pode votar';
     document.querySelector("#texto").innerHTML = `${naoPodeVotar}`;
   }
-  // Fechando Popup que solicita Idade e Mostrando Popup Resposta
+  
+ // Fechando Popup que solicita Idade, limpando o imput caixa-texto e Mostrando Popup Resposta
 
   popUpResposta.style.display = "block";
   fecharPopUp.style.display = "none"
+  document.getElementById("caixa-texto").value = "";
 });
 
 
