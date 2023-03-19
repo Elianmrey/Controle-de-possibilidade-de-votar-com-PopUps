@@ -2,6 +2,8 @@
 const botao = document.querySelector(".iniciar")
 const mostrarPopup = document.querySelector(".popup-mostrar");
 const popUpDoisFechar = document.querySelector(".popupdois");
+
+// função ao clicar em iniciar
 botao.addEventListener("click", () => {
   popUpDoisFechar.style.display = "none";
   mostrarPopup.style.display = "block";
@@ -10,6 +12,8 @@ botao.addEventListener("click", () => {
 
 /* Função que controla o fluxo de informação do usuario e devolve outro popup mostrando o controle de idade*/
 
+
+// função ao clicar em Aceitar
 // Mostrando segundo popup e verificando Maioridae
 
 const botaoAceitar = document.querySelector(".aceitar");
@@ -30,6 +34,7 @@ botaoAceitar.addEventListener("click", () => {
   popUpResposta.style.display = "block";
   fecharPopUp.style.display = "none"
 });
+
 
 // Fechar com botão X de Popup-Mostrar
 
@@ -54,7 +59,7 @@ botaoClose.addEventListener("click", () => {
 const fecharComX = document.querySelector(".fechar")
 fecharComX.addEventListener("click", () => {
   popUpClose.style.display = "none";
-  console.log("Fechou com botão X");
+  console.log("Fechou com botão X, no popupdois, operação concluida");
 });
 
 
